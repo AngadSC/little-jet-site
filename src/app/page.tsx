@@ -24,7 +24,7 @@ export default function Home() {
             </div>
           </div>
           <div className="rounded-2xl overflow-hidden border">
-            <Image src="/hero.jpg" alt="Truck on highway" width={1200} height={800} className="w-full h-full object-cover" priority />
+            <Image src="/semi-drawing" alt="Truck on highway" width={1200} height={800} className="w-full h-full object-cover" priority />
           </div>
         </div>
       </section>
