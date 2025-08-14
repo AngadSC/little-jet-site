@@ -1,103 +1,128 @@
 import Image from "next/image";
+import Link from "next/link";
+
+export const metadata = {
+  title: "Little Jet Transport — Reliable Trucking Across Canada & US",
+  description: "FTL, LTL, Reefer, Dry Van • 24/7 dispatch • Cross-border compliant.",
+};
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      {/* HERO */}
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <p className="text-xs tracking-wide uppercase text-gray-500">Truckload Transport</p>
+            <h1 className="mt-2 text-4xl md:text-5xl font-bold">Reliable Freight, On Time. Every Time.</h1>
+            <p className="mt-4 text-gray-600">
+              Reefer & Dry Van • FTL & LTL • Cross-border. Professional drivers and 24/7 dispatch.
+            </p>
+            <div className="mt-6 flex gap-4">
+              <Link href="/quote" className="px-6 py-3 rounded-xl bg-black text-white">Get a Quote</Link>
+              <a href="tel:+17782453549" className="px-6 py-3 rounded-xl border">Call (778) 245-3549</a>
+            </div>
+          </div>
+          <div className="rounded-2xl overflow-hidden border">
+            <Image src="/hero.jpg" alt="Truck on highway" width={1200} height={800} className="w-full h-full object-cover" priority />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* ABOUT BLURB */}
+      <section className="mx-auto max-w-6xl px-6 py-12">
+        <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div>
+            <h2 className="text-3xl font-bold">Built for Canadian Roads</h2>
+            <p className="mt-3 text-gray-600">
+              We focus on dependable service and clear communication—across Alberta and cross-border lanes.
+              Safe, on-time delivery with no surprises.
+            </p>
+          </div>
+          <div className="md:text-right">
+            <Link href="/services" className="inline-block px-5 py-3 rounded-xl bg-black text-white">Explore Services</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* STATS / KPI STRIP */}
+      <section className="bg-gray-900 text-white">
+        <div className="mx-auto max-w-6xl px-6 py-10 grid grid-cols-3 gap-6 text-center">
+          <div>
+            <p className="text-3xl font-semibold">1M+</p>
+            <p className="text-sm text-gray-300">Km Covered</p>
+          </div>
+          <div>
+            <p className="text-3xl font-semibold">2+</p>
+            <p className="text-sm text-gray-300">Countries Served</p>
+          </div>
+          <div>
+            <p className="text-3xl font-semibold">99%</p>
+            <p className="text-sm text-gray-300">On-time Rate</p>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES GRID */}
+      <section className="mx-auto max-w-6xl px-6 py-14">
+        <div className="flex items-end justify-between">
+          <h2 className="text-3xl font-bold">Freight Services</h2>
+          <Link href="/services" className="text-sm underline">View more</Link>
+        </div>
+        <div className="mt-8 grid md:grid-cols-4 gap-6">
+          {[
+            { title: "Flatbed", img: "/svc-flatbed.jpg", desc: "Open-deck for machines & materials." },
+            { title: "Hot Shot", img: "/svc-hotshot.jpg", desc: "Expedited, smaller-capacity runs." },
+            { title: "Step Deck", img: "/svc-stepdeck.jpg", desc: "Drop-deck for taller cargo." },
+            { title: "Dry Van (Heated)", img: "/svc-dryvan.jpg", desc: "General freight, temp protection." },
+          ].map((s) => (
+            <div key={s.title} className="rounded-2xl overflow-hidden border">
+              <div className="aspect-[4/3] bg-gray-100">
+                <Image src={s.img} alt={s.title} width={800} height={600} className="w-full h-full object-cover" />
+              </div>
+              <div className="p-5">
+                <h3 className="font-semibold">{s.title}</h3>
+                <p className="text-gray-600 text-sm mt-2">{s.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-6xl px-6 py-14">
+          <h2 className="text-3xl font-bold">Why Choose Us</h2>
+          <div className="mt-8 grid md:grid-cols-3 gap-6">
+            <div className="rounded-xl border p-6">
+              <h3 className="font-semibold">Precision</h3>
+              <p className="mt-2 text-gray-600">Accurate pickup windows, clear ETAs, proactive updates.</p>
+            </div>
+            <div className="rounded-xl border p-6">
+              <h3 className="font-semibold">24/7 Dispatch</h3>
+              <p className="mt-2 text-gray-600">Reach us nights, weekends, holidays—whenever freight moves.</p>
+            </div>
+            <div className="rounded-xl border p-6">
+              <h3 className="font-semibold">Safe Delivery</h3>
+              <p className="mt-2 text-gray-600">Trained drivers, maintained equipment, insured shipments.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA STRIP */}
+      <section className="mx-auto max-w-6xl px-6 py-12">
+        <div className="rounded-2xl border p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div>
+            <h3 className="text-2xl font-semibold">Ready for a fast quote?</h3>
+            <p className="text-gray-600 mt-2">Send us your lane, dates, and freight details—we’ll respond promptly.</p>
+          </div>
+          <div className="flex gap-3">
+            <Link href="/quote" className="px-5 py-3 rounded-xl bg-black text-white">Get a Quote</Link>
+            <a href="mailto:dispatch@littlejettransport.com" className="px-5 py-3 rounded-xl border">Email Dispatch</a>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
