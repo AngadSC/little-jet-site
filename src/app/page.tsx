@@ -8,26 +8,35 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
-      {/* HERO */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <p className="text-xs tracking-wide uppercase text-gray-500">Truckload Transport</p>
-            <h1 className="mt-2 text-4xl md:text-5xl font-bold">Reliable Freight, On Time. Every Time.</h1>
-            <p className="mt-4 text-gray-600">
-              Reefer & Dry Van • FTL & LTL • Cross-border. Professional drivers and 24/7 dispatch.
-            </p>
-            <div className="mt-6 flex gap-4">
-              <Link href="/quote" className="px-6 py-3 rounded-xl bg-black text-white">Get a Quote</Link>
-              <a href="tel:+17782453549" className="px-6 py-3 rounded-xl border">Call (778) 245-3549</a>
-            </div>
-          </div>
-          <div className="rounded-2xl overflow-hidden border">
-            <Image src="/semi-drawing.jpg" alt="Truck on highway" width={1200} height={800} className="w-full h-full object-cover" priority />
+    <section className="relative w-full h-[60vh]">
+      {/* Full-bleed background image */}
+      <Image
+        src="/semi-drawing.jpg"
+        alt="Truck on highway"
+        fill
+        className="object-cover"
+        priority
+      />
+
+      {/* Overlay content */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="px-6 text-center text-white">
+          <p className="text-xs tracking-wide uppercase">Truckload Transport</p>
+          <h1 className="mt-2 text-4xl md:text-5xl font-bold">Reliable Freight, On Time. Every Time.</h1>
+          <p className="mt-4 text-gray-200">
+            Reefer & Dry Van • FTL & LTL • Cross-border. Professional drivers and 24/7 dispatch.
+          </p>
+          <div className="mt-6 flex gap-4 justify-center">
+            <Link href="/quote" className="px-6 py-3 rounded-xl bg-black text-white">Get a Quote</Link>
+            <a href="tel:+17782453549" className="px-6 py-3 rounded-xl border border-white text-white">
+              Call (778) 245-3549
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  );
+}
 
       {/* ABOUT BLURB */}
       <section className="mx-auto max-w-6xl px-6 py-12">
