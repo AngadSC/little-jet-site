@@ -13,7 +13,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-14 sm:py-20">
           <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-white/80">
             <span className="h-2 w-2 rounded-full bg-brand-600" />
-            Company
+            Little Jet Transport
           </div>
           <h1 className="mt-4 text-3xl sm:text-5xl font-bold text-white">About Us</h1>
           <p className="mt-3 max-w-3xl text-white/80">
