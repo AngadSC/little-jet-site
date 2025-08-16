@@ -102,12 +102,12 @@ export default function AboutPage() {
         </h3>
         <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
           {[
-            "/partners/lil-truck.svg",
-            "/partners/lil-truck.svg",
-            "/partners/lil-truck.svg",
-            "/partners/lil-truck.svg",
-            "/partners/lil-truck.svg",
-            "/partners/lil-truck.svg",
+            "/lil-truck.svg",
+            "/lil-truck.svg",
+            "/lil-truck.svg",
+            "/lil-truck.svg",
+            "/lil-truck.svg",
+            "/lil-truck.svg",
           ].map((src) => (
             <div key={src} className="grid place-items-center rounded-xl border border-border-200 bg-white p-4 grayscale hover:grayscale-0 transition">
               <Image src={src} alt="Partner logo" width={120} height={40} className="h-8 w-auto object-contain" />
