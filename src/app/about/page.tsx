@@ -28,7 +28,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           <div className="relative aspect-[16/10] sm:aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-border-200">
             <Image
-              src="/about/semi-drawing.jpg"
+              src="/semi-drawing.jpg"
               alt="Little Jet Transport operations"
               fill
               className="object-cover"
