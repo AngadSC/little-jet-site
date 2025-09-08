@@ -110,10 +110,7 @@ export default function AboutPage() {
             </ul>
           </div>
 
-          {/* Footnote / Edit later */}
-          <p className="pt-2 text-sm text-white/60">
-            Note: Details on lanes, equipment, and compliance can be added here when you’re ready.
-          </p>
+          
         </div>
       </section>
     </div>
