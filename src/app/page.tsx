@@ -193,27 +193,29 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="bg-brand-600 rounded-2xl p-8 md:p-12 text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Ship?
-          </h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Get a quote in minutes or speak with our dispatch team. We&rsquo;re here to make your freight move smoothly.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/quote" 
-              className="px-8 py-4 rounded-xl bg-white text-brand-600 hover:bg-neutral-100 font-semibold text-lg transition-colors"
-            >
-              Get a Quote
-            </Link>
-            <a
-              href="tel:+17782453549"
-              className="px-8 py-4 rounded-xl border-2 border-white text-white hover:bg-white hover:text-brand-600 font-semibold text-lg transition-colors"
-            >
-              Call (778) 245-3549
-            </a>
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="bg-neutral-900 rounded-2xl p-8 md:p-12 text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Need Flatbed Transport?
+            </h2>
+            <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+              From construction materials to heavy machinery, get your flatbed quote today. Our dispatch team is standing by.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link 
+                href="/quote" 
+                className="px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-lg transition-colors"
+              >
+                Get a Quote
+              </Link>
+              <a
+                href="tel:+17782453549"
+                className="px-8 py-4 rounded-xl border-2 border-white text-white hover:bg-white hover:text-neutral-900 font-semibold text-lg transition-colors"
+              >
+                Call (778) 245-3549
+              </a>
+            </div>
           </div>
         </div>
       </section>
