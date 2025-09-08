@@ -22,8 +22,8 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="px-6 text-center text-white max-w-4xl">
             <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-white/90 bg-brand-600/20 px-4 py-2 rounded-full border border-white/20">
-              <span className="h-2 w-2 rounded-full bg-brand-600" />
-              Professional Transport
+            
+              
             </div>
             <h1 className="mt-6 text-4xl md:text-6xl font-bold leading-tight text-white">
               Reliable Freight,<br />
