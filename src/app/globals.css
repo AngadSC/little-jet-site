@@ -9,18 +9,28 @@
   --color-brand-600: #dc2626; /* primary red */
   --color-brand-700: #b91c1c; /* hover/active */
 
-  /* Neutrals (greys) */
-  --color-neutral-50:  #f3f4f6; /* light page background */
-  --color-neutral-100: #e5e7eb;
+  /* Neutrals (greys) - COMPLETE SCALE FOR TEXT */
+  --color-neutral-50:  #f9fafb; /* lightest */
+  --color-neutral-100: #f3f4f6; /* very light */
+  --color-neutral-200: #e5e7eb; /* light */
   --color-neutral-300: #d1d5db; /* light borders */
-  --color-neutral-500: #6b7280; /* body text on light */
-  --color-neutral-700: #374151; /* headings/body on light */
-  --color-neutral-900: #0a0a0a; /* dark surfaces */
+  --color-neutral-400: #9ca3af; /* medium light */
+  --color-neutral-500: #6b7280; /* medium */
+  --color-neutral-600: #4b5563; /* medium dark */
+  --color-neutral-700: #374151; /* dark */
+  --color-neutral-800: #1f2937; /* darker */
+  --color-neutral-900: #111827; /* darkest */
 
   /* Slate colors for better dark sections */
+  --color-slate-100: #f1f5f9; /* lightest text on dark */
   --color-slate-200: #e2e8f0; /* light text on dark */
+  --color-slate-300: #cbd5e1; /* medium light */
+  --color-slate-700: #334155; /* dark */
   --color-slate-800: #1e293b; /* attractive dark background */
   --color-slate-900: #0f172a; /* darker overlay */
+
+  /* White for text on dark backgrounds */
+  --color-white: #ffffff;
 
   /* Surface/border alias (nice for borders on cards) */
   --color-border-200: #e5e7eb;
@@ -32,14 +42,14 @@
 
 /* ---------- Light/Dark mode CSS variables for page chrome ---------- */
 :root {
-  --background: var(--color-neutral-50);   /* page bg */
-  --foreground: var(--color-neutral-700);  /* main text */
+  --background: #ffffff;                    /* white page bg */
+  --foreground: var(--color-neutral-900);  /* dark text */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--color-neutral-900);
-    --foreground: #ededed; /* high-contrast text on dark */
+    --background: #0a0a0a;  /* very dark bg */
+    --foreground: #ededed;  /* light text */
   }
 }
 

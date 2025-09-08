@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Little Jet Transport — Reliable Trucking Across Canada & US",
+  title: "Little Jet Transport – Reliable Trucking Across Canada & US",
   description: "FTL, LTL, Reefer, Dry Van • 24/7 dispatch • Cross-border compliant.",
 };
 
@@ -25,11 +25,11 @@ export default function Home() {
               <span className="h-2 w-2 rounded-full bg-brand-600" />
               Professional Transport
             </div>
-            <h1 className="mt-6 text-4xl md:text-6xl font-bold leading-tight">
+            <h1 className="mt-6 text-4xl md:text-6xl font-bold leading-tight text-white">
               Reliable Freight,<br />
-              <span className="text-brand-600">On Time.</span> Every Time.
+              <span className="text-brand-400">On Time.</span> Every Time.
             </h1>
-            <p className="mt-6 text-lg text-neutral-100 max-w-2xl mx-auto">
+            <p className="mt-6 text-lg text-slate-100 max-w-2xl mx-auto">
               FlatBed Trucking • FTL & LTL • Cross-border. Professional drivers and 24/7 dispatch across Western Canada.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -57,10 +57,10 @@ export default function Home() {
             <div className="text-xs font-semibold uppercase tracking-wider text-brand-600 mb-4">
               About Little Jet
             </div>
-            <h2 className="text-4xl font-bold text-neutral-900 leading-tight">
+            <h2 className="text-4xl font-bold text-neutral-900 dark:text-white leading-tight">
               Built for Canadian Roads
             </h2>
-            <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
+            <p className="mt-6 text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">
               We focus on dependable service and clear communication—across Alberta and cross-border lanes.
               Safe, on-time delivery with no surprises.
             </p>
@@ -93,8 +93,8 @@ export default function Home() {
           <div className="text-xs font-semibold uppercase tracking-wider text-brand-600 mb-4">
             Where We Go
           </div>
-          <h2 className="text-4xl font-bold text-neutral-900">Coast to Coast Coverage</h2>
-          <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-neutral-900 dark:text-white">Coast to Coast Coverage</h2>
+          <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
             From Western Canada to cross-border routes, we deliver where you need us most.
           </p>
         </div>
@@ -116,16 +116,16 @@ export default function Home() {
               description: "Fully compliant US cross-border service"
             },
           ].map((location) => (
-            <div key={location.region} className="text-center p-6 rounded-2xl border border-neutral-200 bg-white hover:shadow-lg transition-shadow">
+            <div key={location.region} className="text-center p-6 rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 hover:shadow-lg transition-shadow">
               <div className="mx-auto w-16 h-16 rounded-full bg-brand-600/10 flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-neutral-900 mb-3">{location.region}</h3>
+              <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-3">{location.region}</h3>
               <p className="text-sm font-medium text-brand-600 mb-3">{location.cities}</p>
-              <p className="text-neutral-600">{location.description}</p>
+              <p className="text-neutral-600 dark:text-neutral-300">{location.description}</p>
             </div>
           ))}
         </div>
@@ -143,13 +143,13 @@ export default function Home() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="bg-neutral-50 py-16">
+      <section className="bg-neutral-50 dark:bg-neutral-900 py-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-center mb-12">
             <div className="text-xs font-semibold uppercase tracking-wider text-brand-600 mb-4">
               Why Choose Little Jet
             </div>
-            <h2 className="text-4xl font-bold text-neutral-900">Built on Excellence</h2>
+            <h2 className="text-4xl font-bold text-neutral-900 dark:text-white">Built on Excellence</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -161,8 +161,8 @@ export default function Home() {
                 <div className="mx-auto w-16 h-16 rounded-full bg-brand-600 text-white flex items-center justify-center text-2xl mb-6">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-4">{feature.title}</h3>
-                <p className="text-neutral-600">{feature.desc}</p>
+                <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-4">{feature.title}</h3>
+                <p className="text-neutral-600 dark:text-neutral-300">{feature.desc}</p>
               </div>
             ))}
           </div>
@@ -172,7 +172,7 @@ export default function Home() {
       {/* STATS */}
       <section className="bg-slate-800 py-16">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="grid md:grid-cols-3 gap-8 text-center text-white">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-brand-400 mb-2">22,900+</div>
               <div className="text-lg text-slate-200">Successful Deliveries</div>
@@ -190,9 +190,9 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-16">
+      <section className="bg-white dark:bg-neutral-900 py-16">
         <div className="mx-auto max-w-4xl px-6">
-          <div className="bg-slate-800 rounded-2xl p-8 md:p-12 text-center text-white">
+          <div className="bg-slate-800 rounded-2xl p-8 md:p-12 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Need Flatbed Transport?
             </h2>
