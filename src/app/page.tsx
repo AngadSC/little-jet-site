@@ -23,10 +23,10 @@ export default function Home() {
           <div className="px-6 text-center text-white max-w-4xl">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
               Reliable Freight,<br />
-              <span className="text-brand-400">On Time.</span> Every Time.
+              <span className="text-brand-600">On Time.</span> Every Time.
             </h1>
             <p className="mt-6 text-lg text-slate-100 max-w-2xl mx-auto">
-              FlatBed Trucking • FTL & LTL • Cross-border. Professional drivers and 24/7 dispatch across Western Canada.
+              FlatBed Trucking • FTL & LTL • Cross-border. Professional drivers and 24/7 dispatch across Western Canada
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
@@ -57,8 +57,8 @@ export default function Home() {
               Built for Canadian Roads
             </h2>
             <p className="mt-6 text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">
-              We focus on dependable service and clear communication—across Alberta and cross-border lanes.
-              Safe, on-time delivery with no surprises.
+              We focus on dependable service and clear communication—across Alberta and cross-border lanes
+              Safe, on-time delivery with no surprises
             </p>
             <div className="mt-8">
               <Link 
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
           <h2 className="text-4xl font-bold text-neutral-900 dark:text-white">Coast to Coast Coverage</h2>
           <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
-            From Western Canada to cross-border routes, we deliver where you need us most.
+            From Western Canada to cross-border routes, we deliver where you need us most
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -193,7 +193,7 @@ export default function Home() {
               Need Flatbed Transport?
             </h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto text-slate-200">
-              From construction materials to heavy machinery, get your flatbed quote today. Our dispatch team is standing by.
+              From construction materials to heavy machinery, get your flatbed quote today. Our dispatch team is standing by
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
