@@ -5,6 +5,7 @@
 /* These create utilities like bg-brand-600, text-neutral-700, etc. */
 @theme {
   /* Brand reds */
+  --color-brand-400: #f87171; /* lighter red for stats/accents */
   --color-brand-600: #dc2626; /* primary red */
   --color-brand-700: #b91c1c; /* hover/active */
 
@@ -15,6 +16,11 @@
   --color-neutral-500: #6b7280; /* body text on light */
   --color-neutral-700: #374151; /* headings/body on light */
   --color-neutral-900: #0a0a0a; /* dark surfaces */
+
+  /* Slate colors for better dark sections */
+  --color-slate-200: #e2e8f0; /* light text on dark */
+  --color-slate-800: #1e293b; /* attractive dark background */
+  --color-slate-900: #0f172a; /* darker overlay */
 
   /* Surface/border alias (nice for borders on cards) */
   --color-border-200: #e5e7eb;
