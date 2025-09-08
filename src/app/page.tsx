@@ -127,10 +127,10 @@ export default function Home() {
         </div>
         <div className="text-center mt-12">
           <Link 
-            href="/coverage" 
+            href="/wego" 
             className="inline-flex items-center text-brand-600 hover:text-brand-700 font-semibold"
           >
-            View full coverage map
+            Our Trips
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
