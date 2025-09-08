@@ -50,8 +50,8 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="text-xs font-semibold uppercase tracking-wider text-brand-600 mb-4">
-              About Little Jet
+            <div className="text-xl font-semibold uppercase tracking-wider text-brand-600 mb-4">
+              Little Jet
             </div>
             <h2 className="text-4xl font-bold text-neutral-900 dark:text-white leading-tight">
               Built for Canadian Roads
@@ -86,7 +86,7 @@ export default function Home() {
       {/* WHERE WE GO */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="text-center mb-12">
-          <div className="text-xs font-semibold uppercase tracking-wider text-brand-600 mb-4">
+          <div className="text-xl font-semibold uppercase tracking-wider text-brand-600 mb-4">
             Where We Go
           </div>
           <h2 className="text-4xl font-bold text-neutral-900 dark:text-white">Coast to Coast Coverage</h2>
@@ -142,7 +142,7 @@ export default function Home() {
       <section className="bg-neutral-50 dark:bg-neutral-900 py-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-center mb-12">
-            <div className="text-xs font-semibold uppercase tracking-wider text-brand-600 mb-4">
+            <div className="text-xl font-semibold uppercase tracking-wider text-brand-600 mb-4">
               Why Choose Little Jet
             </div>
             <h2 className="text-4xl font-bold text-neutral-900 dark:text-white">Built on Excellence</h2>
