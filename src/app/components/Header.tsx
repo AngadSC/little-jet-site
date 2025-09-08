@@ -10,8 +10,8 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/services" className="text-base font-medium text-neutral-700 dark:text-neutral-300 hover:text-brand-600 transition-colors">
-            Services
+          <Link href="/wego" className="text-base font-medium text-neutral-700 dark:text-neutral-300 hover:text-brand-600 transition-colors">
+            Where We Go
           </Link>
           <Link href="/about" className="text-base font-medium text-neutral-700 dark:text-neutral-300 hover:text-brand-600 transition-colors">
             About

@@ -43,8 +43,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/services" className="text-base text-neutral-600 dark:text-neutral-400 hover:text-brand-600 transition-colors">
-                  Our Services
+                <Link href="/wego" className="text-base text-neutral-600 dark:text-neutral-400 hover:text-brand-600 transition-colors">
+                  Where We Go
                 </Link>
               </li>
               <li>
