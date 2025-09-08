@@ -8,39 +8,33 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="bg-white text-neutral-700">
+    <div className="bg-neutral-900 text-white">
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-12 sm:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-8 lg:gap-12">
-          {/* Bigger image */}
-          <div className="relative h-[360px] sm:h-[480px] lg:h-[640px] overflow-hidden rounded-3xl ring-1 ring-border-200">
+        {/* Heavier left column for the image */}
+        <div className="grid items-start gap-8 lg:gap-12 lg:grid-cols-[1.6fr_1fr]">
+          {/* Large, non-cropped image */}
+          <div className="relative h-[380px] sm:h-[520px] lg:h-[720px] overflow-hidden rounded-3xl ring-1 ring-white/10 bg-white/5 p-2">
             <Image
               src="/semi-drawing.jpg"
               alt="Little Jet Transport operations"
               fill
               priority
-              className="object-cover"
-              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-contain"
+              sizes="(min-width:1024px) 62vw, 100vw"
             />
           </div>
 
-          {/* Text (kept exactly; adjust as needed) */}
+          {/* Text block (kept minimal) */}
           <div>
             <div className="text-xs font-semibold uppercase tracking-wider text-brand-600">
-              Our Journey
+              Little Jet
             </div>
-            <h1 className="mt-2 text-3xl sm:text-4xl font-bold text-neutral-700">
-              Built for speed. Obsessed with reliability.
+            <h1 className="mt-2 text-3xl sm:text-4xl font-bold text-white">
+              Built for Canadian Roads
             </h1>
-            <p className="mt-4 leading-7">
-              Little Jet Transport started with a simple promise:{" "}
-              <span className="font-medium">deliver on time, every time</span>. We grew from a
-              single truck to a province-wide network by focusing on the details—clear
-              communication, proactive tracking, and professional drivers who care.
-            </p>
-            <p className="mt-4 leading-7">
-              Today, we support businesses of all sizes with{" "}
-              <span className="font-medium">FTL and LTL</span> solutions, same-day options on
-              core lanes, and dependable coverage across Western North America.
+            <p className="mt-4 leading-7 text-white/80">
+              We focus on dependable service and clear communication—across Alberta and
+              cross-border lanes. Safe, on-time delivery with no surprises.
             </p>
           </div>
         </div>
